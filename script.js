@@ -115,7 +115,7 @@ downloadButtons.forEach(button => {
     button.addEventListener('click', () => {
         // Simulate download action
         console.log('Download initiated');
-        alert('Thank you for your interest! In a real application, this would start the download or redirect to the app store.');
+        alert('Thank you for your interest! Listo will be available soon');
     });
 });
 
