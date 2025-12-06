@@ -45,6 +45,13 @@ body {
     font-size: 1.5rem;
     font-weight: 700;
     color: var(--white);
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 40px;
+    width: auto;
 }
 
 .nav-links {
@@ -62,6 +69,17 @@ body {
 
 .nav-links a:hover {
     opacity: 0.8;
+}
+
+.lang-switch {
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    transition: background 0.3s;
+}
+
+.lang-switch:hover {
+    background: rgba(255, 255, 255, 0.1);
+    opacity: 1 !important;
 }
 
 .btn-get-started {
@@ -343,6 +361,13 @@ body {
     font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo .logo-img {
+    height: 40px;
+    width: auto;
 }
 
 .footer-links {
