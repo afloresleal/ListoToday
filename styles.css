@@ -202,34 +202,32 @@ body {
 
 .phone-mockup {
     width: 250px;
-    height: 500px;
-    background: linear-gradient(135deg, #f0f0f0 0%, #e0e0e0 100%);
-    border-radius: 40px;
-    border: 8px solid #2a2a2a;
+    height: auto;
     position: absolute;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+    filter: drop-shadow(0 20px 60px rgba(0, 0, 0, 0.2));
+    transition: transform 0.3s ease;
 }
 
-.phone-mockup::before {
-    content: '';
-    position: absolute;
-    top: 15px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100px;
-    height: 25px;
-    background: #2a2a2a;
-    border-radius: 0 0 20px 20px;
+.phone-mockup:hover {
+    transform: translateY(-10px) rotate(-5deg) translateX(-30px) !important;
 }
 
 .phone-1 {
-    transform: rotate(-5deg) translateX(-30px);
+    transform: rotate(-5deg) translateX(-80px);
     z-index: 2;
 }
 
+.phone-1:hover {
+    transform: translateY(-10px) rotate(-5deg) translateX(-80px) !important;
+}
+
 .phone-2 {
-    transform: rotate(5deg) translateX(30px);
+    transform: rotate(5deg) translateX(50px);
     z-index: 1;
+}
+
+.phone-2:hover {
+    transform: translateY(-10px) rotate(5deg) translateX(50px) !important;
 }
 
 /* Features Section */
