@@ -141,12 +141,17 @@ if (getStartedBtn) {
     });
 }
 
-// Add parallax effect to hero section
+// Add parallax effect to hero section (desktop only)
 window.addEventListener('scroll', () => {
     const scrolled = window.pageYOffset;
     const hero = document.querySelector('.hero-right');
-    if (hero) {
+    const isDesktop = window.matchMedia('(min-width: 969px)').matches;
+
+    if (hero && isDesktop) {
         hero.style.transform = `translateY(${scrolled * 0.3}px)`;
+    } else if (hero && !isDesktop) {
+        // Reset transform on mobile to prevent any scroll animation
+        hero.style.transform = '';
     }
 });
 
