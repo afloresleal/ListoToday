@@ -113,9 +113,8 @@ window.addEventListener('scroll', () => {
 const downloadButtons = document.querySelectorAll('.btn-primary, .btn-cta');
 downloadButtons.forEach(button => {
     button.addEventListener('click', () => {
-        // Simulate download action
-        console.log('Download initiated');
-        alert('Thank you for your interest! Listo will be available soon');
+        // Open App Store in new tab
+        window.open('https://apps.apple.com/us/app/listo-today/id6756390475', '_blank');
     });
 });
 
@@ -134,10 +133,52 @@ if (learnMoreBtn) {
 const getStartedBtn = document.querySelector('.btn-get-started');
 if (getStartedBtn) {
     getStartedBtn.addEventListener('click', () => {
-        const ctaSection = document.querySelector('#download');
-        if (ctaSection) {
-            ctaSection.scrollIntoView({ behavior: 'smooth' });
-        }
+        // Open App Store in new tab
+        window.open('https://apps.apple.com/us/app/listo-today/id6756390475', '_blank');
+    });
+}
+
+// Footer download link handler
+const footerDownloadLinks = document.querySelectorAll('a[href="#download"], a[href="#descargar"]');
+footerDownloadLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault();
+        // Open App Store in new tab
+        window.open('https://apps.apple.com/us/app/listo-today/id6756390475', '_blank');
+    });
+});
+
+// Phone image hover effect - bring back image to front
+const phone1 = document.querySelector('.phone-1');
+const phone2 = document.querySelector('.phone-2');
+
+if (phone1 && phone2) {
+    // Add smooth transition styles
+    phone1.style.transition = 'all 0.4s ease';
+    phone2.style.transition = 'all 0.4s ease';
+
+    // Set initial z-index values
+    phone1.style.zIndex = '2';
+    phone2.style.zIndex = '1';
+
+    // Hover on phone 1 (front image)
+    phone1.addEventListener('mouseenter', () => {
+        phone1.style.transform = 'scale(1.05)';
+    });
+
+    phone1.addEventListener('mouseleave', () => {
+        phone1.style.transform = '';
+    });
+
+    // Hover on phone 2 (back image) - bring it to front
+    phone2.addEventListener('mouseenter', () => {
+        phone2.style.zIndex = '3';
+        phone2.style.transform = 'scale(1.05)';
+    });
+
+    phone2.addEventListener('mouseleave', () => {
+        phone2.style.zIndex = '1';
+        phone2.style.transform = '';
     });
 }
 
