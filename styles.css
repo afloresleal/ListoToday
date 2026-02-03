@@ -236,6 +236,37 @@ body {
     transform: translateY(-10px) rotate(5deg) translateX(50px) !important;
 }
 
+/* Quick Validation Section */
+.quick-validation {
+    background: var(--white);
+    padding: 3rem 0;
+}
+
+.quick-validation-content {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.quick-validation-content h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.quick-validation-list {
+    list-style: none;
+    display: grid;
+    gap: 0.75rem;
+    color: var(--text-gray);
+    font-size: 1rem;
+}
+
+.quick-validation-list li::before {
+    content: "• ";
+    color: var(--primary-blue);
+    font-weight: 700;
+}
+
 /* Features Section */
 .features {
     padding: 6rem 0;
@@ -339,6 +370,36 @@ body {
     font-size: 0.95rem;
 }
 
+.capabilities-break {
+    display: none;
+}
+
+/* Archive Spotlight */
+.archive-spotlight {
+    display: none;
+    background: var(--bg-cream);
+    padding: 3rem 0;
+}
+
+.archive-spotlight-content {
+    background: var(--white);
+    border-radius: 16px;
+    padding: 2rem;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.archive-spotlight-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.archive-spotlight-content p {
+    color: var(--text-gray);
+    line-height: 1.6;
+}
+
 /* Creator Story Section */
 .creator-story {
     padding: 6rem 0;
@@ -374,6 +435,10 @@ body {
 .cta {
     padding: 4rem 0;
     background: var(--bg-cream);
+}
+
+.cta-mid .cta-content {
+    padding: 3rem;
 }
 
 .cta-content {
@@ -489,6 +554,15 @@ body {
     font-size: 0.9rem;
 }
 
+.footer-bottom a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+
 /* Responsive Design */
 @media (max-width: 968px) {
     .hero-content {
@@ -496,6 +570,7 @@ body {
         text-align: center;
         display: flex;
         flex-direction: column;
+        gap: 1.5rem;
     }
 
     .hero-left {
@@ -505,22 +580,25 @@ body {
     .hero-left h1 {
         font-size: 2.5rem;
         order: 1;
+        margin-bottom: 1rem;
     }
 
     .hero-description {
         order: 2;
+        margin-bottom: 1.25rem;
     }
 
     .hero-right {
-        height: 350px;
-        margin-top: 1rem;
-        margin-bottom: 2rem;
-        order: 3;
+        height: 260px;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        order: 4;
     }
 
     .hero-buttons {
         justify-content: center;
-        order: 4;
+        order: 3;
+        margin-bottom: 0.5rem;
     }
 
     .trust-badge {
@@ -529,7 +607,7 @@ body {
     }
 
     .phone-mockup {
-        width: 180px;
+        width: 150px;
         filter: drop-shadow(0 5px 20px rgba(0, 0, 0, 0.2));
     }
 
@@ -547,6 +625,25 @@ body {
 
     .capabilities-grid {
         grid-template-columns: 1fr;
+    }
+
+    .capability-item.anchor {
+        padding: 2.5rem;
+        border: 1px solid #e5e5e5;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+    }
+
+    .capabilities-break {
+        display: block;
+        height: 2.5rem;
+    }
+
+    .capability-item.archive-card {
+        display: none;
+    }
+
+    .archive-spotlight {
+        display: block;
     }
 
     .capabilities-header h2,
@@ -587,11 +684,16 @@ body {
 
     .btn-get-started {
         padding: 0.6rem 1.2rem;
-        font-size: 0.9rem;
+        font-size: 0.85rem;
     }
 }
 
 @media (max-width: 640px) {
+    .hero {
+        padding: 4rem 0 3rem;
+        min-height: auto;
+    }
+
     .hero-left h1 {
         font-size: 2rem;
     }
@@ -601,13 +703,13 @@ body {
     }
 
     .hero-right {
-        height: 300px;
+        height: 220px;
         margin-top: 0rem;
     }
 
     
     .phone-mockup {
-        width: 150px;
+        width: 130px;
         filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.2));
 }
 
@@ -628,6 +730,18 @@ body {
 
     .capabilities {
         padding: 4rem 0;
+    }
+
+    .quick-validation {
+        padding: 2.5rem 0;
+    }
+
+    .quick-validation-content h2 {
+        font-size: 1.6rem;
+    }
+
+    .archive-spotlight {
+        padding: 2.5rem 0;
     }
 
     .creator-story {
