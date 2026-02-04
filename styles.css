@@ -387,6 +387,24 @@ box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24p
   justify-content: left;
 
 }
+.footer-socials-row {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.footer-socials-row a {
+  margin-bottom: 0;
+  height: auto;
+}
+
+.footer-socials .footer-lang {
+  display: inline-flex;
+  justify-content: flex-start;
+  margin-bottom: 0;
+}
 .footer-grid a img{
     margin-right: 8px;
 }
@@ -414,8 +432,13 @@ box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24p
 
 /* Mobile */
 @media (max-width: 900px) {
-  .pill-links a {
+  .pill-links a:not(.pill-btn),
+  .pill-links .lang {
     display: none;
+  }
+
+  .pill-links .pill-btn {
+    display: inline-flex;
   }
 
   .hero h1 {
@@ -427,7 +450,32 @@ box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24p
   }
 
   .footer-grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      "logo logo logo"
+      "product legal socials";
+    text-align: center;
+    gap: 28px;
+  }
+
+  .footer-grid > div:nth-child(1) {
+    grid-area: logo;
+  }
+
+  .footer-grid > div:nth-child(2) {
+    grid-area: product;
+  }
+
+  .footer-grid > div:nth-child(3) {
+    grid-area: legal;
+  }
+
+  .footer-grid > div:nth-child(4) {
+    grid-area: socials;
+  }
+
+  .footer-grid a {
+    justify-content: center;
   }
 
   .pill-nav {
@@ -470,7 +518,7 @@ box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24p
 
   .hero-device {
     width: 220px;
-    margin-bottom: -96px;
+    margin-bottom: -280px;
   }
 
   .pill-btn {
@@ -529,12 +577,39 @@ box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24p
   }
 
   .footer-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      "logo logo logo"
+      "product legal socials";
     text-align: center;
     gap: 28px;
   }
 
+  .footer-grid > div:nth-child(1) {
+    grid-area: logo;
+  }
+
+  .footer-grid > div:nth-child(2) {
+    grid-area: product;
+  }
+
+  .footer-grid > div:nth-child(3) {
+    grid-area: legal;
+  }
+
+  .footer-grid > div:nth-child(4) {
+    grid-area: socials;
+  }
+
   .footer-grid a {
+    justify-content: center;
+  }
+
+  .footer-socials-row {
+    justify-content: center;
+  }
+
+  .footer-socials .footer-lang {
     justify-content: center;
   }
 
