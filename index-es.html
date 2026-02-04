@@ -1,241 +1,204 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-M6CXMMXWD1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-M6CXMMXWD1');
-</script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Listo – Tareas y Notas, Juntas</title>
-    <link rel="icon" type="image/png" href="listo.png">
-    <link rel="stylesheet" href="styles.css">
-
-    <!-- Meta Descripción Principal -->
-    <meta
-        name="description"
-        content="La app minimalista de productividad que combina tareas y notas en un solo lugar. Organiza con proyectos y etiquetas. Todo guardado localmente en tu dispositivo. Descarga para iOS.">
-
-    <!-- Open Graph / Facebook -->
-    <meta property="og:title" content="Listo – Tareas y Notas, Juntas">
-    <meta
-        property="og:description"
-        content="Una app para todo lo que tienes en mente. Tareas que necesitas hacer. Notas que vale la pena guardar. Todo organizado a tu manera, todo guardado localmente en tu dispositivo.">
-    <meta property="og:image" content="listo-og.png">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://listo.today">
-
-    <!-- Twitter / X -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Listo – Tareas y Notas, Juntas">
-    <meta
-        name="twitter:description"
-        content="La app minimalista de productividad que combina tareas y notas. Organiza a tu manera. Privacidad por diseño.">
-    <meta name="twitter:image" content="listo-og.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Listo – Tareas, notas y recordatorios</title>
+  <link rel="icon" type="image/png" href="listo.png">
+  <link rel="stylesheet" href="styles.css">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-M6CXMMXWD1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-M6CXMMXWD1');
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Host+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
-        <div class="container">
-            <div class="nav">
-                <div class="logo"><a href="#"><img src="listo.svg" alt="Listo" class="logo-img"></a></div>
-                <nav class="nav-links">
-                    <a href="#caracteristicas">Características</a>
-                    <button class="btn-get-started">Obtén Listo para iOS</button>
-                    <a href="index.html" class="lang-switch">EN 🇺🇸</a>
-                </nav>
-            </div>
+  <header class="topbar">
+    <div class="container">
+      <div class="pill-nav">
+        <div class="pill-left">
+          <img src="listo_blue.svg" alt="Listo" class="pill-logo">
         </div>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-left">
-                    <h1>Tareas, notas y recordatorios. Por fin en un lugar tranquilo.</h1>
-                    <p class="hero-description">Listo es una app de productividad simple para quienes están cansados de cambiar de herramientas. Captura, organiza y ve lo que importa hoy sin ruido.</p>
-                    <div class="hero-buttons">
-                        <button class="btn-primary">Obtén Listo para iOS</button>
-                        <button class="btn-secondary">Ver cómo funciona</button>
-                    </div>
-                    <p class="hero-note">Requiere iOS 17.0 o posterior</p>
-                   <!-- <div class="trust-badge">
-                        <div class="trust-dots">
-                            <span class="dot"></span>
-                            <span class="dot"></span>
-                            <span class="dot"></span>
-                        </div>
-                        <span class="trust-text">Confiado por más de 1000 usuarios en todo el mundo</span>
-                    </div>-->
-                </div>
-                <div class="hero-right">
-                    <img src="iPhone_01.png" alt="Listo" class="phone-mockup phone-1">
-                    <img src="iPhone_02_esp.png" alt="Listo Tareas" class="phone-mockup phone-2">
-                </div>
-            </div>
+        <div class="pill-links">
+          <a href="#features">Características</a>
+          <a class="pill-btn" href="https://apps.apple.com/us/app/listo-today/id6756390475" target="_blank" rel="noopener noreferrer">Obtén Listo</a>
+          <a href="index.html" class="lang">EN 🇺🇸</a>
         </div>
-    </section>
+      </div>
+    </div>
+  </header>
 
-    <!-- Quick Validation Section -->
-    <section class="quick-validation">
-        <div class="container">
-            <div class="quick-validation-content">
-                <h2>Una forma más tranquila de estar al día</h2>
-                <ul class="quick-validation-list">
-                    <li>Tareas, notas y recordatorios en un solo lugar</li>
-                    <li>Privado por defecto y guardado en tu dispositivo</li>
-                    <li>Ve lo que importa hoy en segundos</li>
-                </ul>
-            </div>
+  <section class="hero">
+    <div class="container">
+      <h1>Tareas, notas y recordatorios. <br>Por fin en un lugar tranquilo.</h1>
+      <p>
+        Listo es una app de productividad simple para quienes están cansados de cambiar de herramientas.
+        <br>Captura, organiza y ve lo que importa hoy sin ruido.
+      </p>
+      <div class="hero-actions">
+        <a class="btn-light" href="https://apps.apple.com/us/app/listo-today/id6756390475" target="_blank" rel="noopener noreferrer">Obtén Listo para iOS</a>
+        <a class="btn-outline" href="#features">Ver cómo funciona</a>
+      </div>
+      <img src="listo_home.png" alt="Captura de Listo" class="hero-device">
+    </div>
+  </section>
+
+  <section class="section" id="features">
+    <div class="container">
+      <h2>Todo lo que tu día necesita, en un solo lugar.</h2>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <h3>Bandeja Inteligente</h3>
+          <p>Abre Listo y sabe qué importa hoy.</p>
         </div>
-    </section>
-
-    <!-- Features Section -->
-    <section class="features" id="caracteristicas">
-        <div class="container">
-            <div class="features-header">
-                <h2>¿Por qué Listo?</h2>
-            </div>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M20 6L9 17L4 12" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </div>
-                    <h3>Todo en un solo lugar</h3>
-                    <p>Deja de decidir dónde va una idea. Captura tareas y notas juntas para no perder nada ni perder tiempo cambiando de apps.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M20 6L9 17L4 12" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </div>
-                    <h3>Organiza como funciona tu mente</h3>
-                    <p>Usa proyectos para lo grande y etiquetas de color para los detalles. Encuentra lo que necesitas sin forzar tu vida en carpetas rígidas.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M20 6L9 17L4 12" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </div>
-                    <h3>Privacidad por defecto</h3>
-                    <p>Tus tareas y notas se quedan en tu dispositivo, así tus planes siguen siendo personales. Sin cuentas, sin rastreo, sin sorpresas.</p>
-                </div>
-            </div>
+        <div class="feature-card">
+          <h3>Tareas Recurrentes</h3>
+          <p>Mantén las rutinas en piloto automático para no tener que recordarlas.</p>
         </div>
-    </section>
-
-    <!-- What You Can Do Section -->
-    <section class="capabilities">
-        <div class="container">
-            <div class="capabilities-header">
-                <h2>Todo lo que necesitas, nada de lo que no</h2>
-            </div>
-            <div class="capabilities-grid">
-                <div class="capability-item anchor">
-                    <h3>Bandeja Inteligente</h3>
-                    <p>Abre Listo y sabe qué importa hoy. Tareas vencidas, enfoque de hoy y notas recientes en una sola vista.</p>
-                </div>
-                <div class="capability-item secondary">
-                    <h3>Tareas Recurrentes</h3>
-                    <p>Mantén las rutinas en piloto automático para no tener que recordarlas.</p>
-                </div>
-                <div class="capability-item secondary">
-                    <h3>Etiquetas Personalizadas</h3>
-                    <p>Agrupa trabajo y vida a tu manera para ver el contexto correcto rápido.</p>
-                </div>
-                <div class="capabilities-break" aria-hidden="true"></div>
-                <div class="capability-item secondary">
-                    <h3>Proyectos Flexibles</h3>
-                    <p>Mantén metas grandes juntas sin atarte. Mueve cosas cuando cambien tus planes.</p>
-                </div>
-                <div class="capability-item archive-card">
-                    <h3>Archiva Todo</h3>
-                    <p>Aclara tu vista cuando algo termina sin perderlo.</p>
-                </div>
-                <div class="capability-item secondary">
-                    <h3>Modo Claro y Oscuro</h3>
-                    <p>Cuidada para tus ojos de día y de noche.</p>
-                </div>
-            </div>
+        <div class="feature-card">
+          <h3>Etiquetas Personalizadas</h3>
+          <p>Agrupa trabajo y vida a tu manera para ver el contexto correcto rápido.</p>
         </div>
-    </section>
-
-    <!-- Archive Spotlight (Mobile) -->
-    <section class="archive-spotlight">
-        <div class="container">
-            <div class="archive-spotlight-content">
-                <h3>Archiva Todo</h3>
-                <p>Aclara tu vista cuando algo termina sin perderlo.</p>
-            </div>
+        <div class="feature-card">
+          <h3>Proyectos Flexibles</h3>
+          <p>Mantén metas grandes juntas sin atarte.</p>
         </div>
-    </section>
-
-    <!-- Creator Story Section -->
-    <section class="creator-story">
-        <div class="container">
-            <div class="creator-content">
-                <h2>Creada por alguien que la necesitaba.</h2>
-                <p>Listo comenzó como un proyecto personal, una app de productividad que realmente funcionaba como yo pienso. Sin saturación de funciones, sin complejidad, solo lo esencial. Si estás cansado de apps que intentan hacer todo (y nada bien), quizás te guste Listo también.</p>
-                <p class="creator-signature">Alejandra Flores, Listo</p>
-            </div>
+        <div class="feature-card">
+          <h3>Archiva Todo</h3>
+          <p>Aclara tu vista cuando algo termina sin perderlo.</p>
         </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="cta cta-mid" id="descargar">
-        <div class="container">
-            <div class="cta-content">
-                <h2>¿Listo para un día más tranquilo?</h2>
-                <p>Guarda tareas, notas y recordatorios en un solo espacio limpio.</p>
-                <button class="btn-cta">Obtén Listo para iOS</button>
-                <p class="cta-note">Descarga gratuita. Requiere iOS 17.0 o posterior.</p>
-            </div>
+        <div class="feature-card">
+          <h3>Modo Claro y Oscuro</h3>
+          <p>Cuidada para tus ojos de día y de noche.</p>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <div class="footer-logo"><img src="listo.svg" alt="Listo" class="logo-img"></div>
-                </div>
-                <div class="footer-links">
-                    <div class="footer-column">
-                        <h4>Producto</h4>
-                        <a href="#caracteristicas">Características</a>
-                        <a href="#descargar">Descargar</a>
-                        <!--<a href="#precios">Precios</a>-->
-                    </div>
-<!--                    <div class="footer-column">
-                        <h4>Empresa</h4>
-                        <a href="#acerca">Acerca de</a>
-                        <a href="#blog">Blog</a>
-                        <a href="#carreras">Carreras</a>
-                    </div>-->
-                    <div class="footer-column">
-                        <h4>Legal</h4>
-                        <a href="privacidad.html">Privacidad</a>
-                        <a href="mailto:hola@listo.today">Contacto</a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Listo. Todos los derechos reservados.</p>
-                <p>Hecho en México por <a href="https://aflores.mx/" target="_blank" rel="noopener noreferrer">aflores.mx</a></p>
-            </div>
+  <section class="story">
+    <div class="container">
+      <h2>Creada por alguien que la necesitaba.</h2>
+      <p>
+        Listo empezó como un proyecto personal, una app de productividad que realmente funcionaba como yo pienso.
+        Sin saturación, sin complejidad, solo lo esencial. Si estás cansado de apps que intentan hacer todo y no
+        hacen nada bien, quizá te guste Listo también.
+      </p>
+      <p class="signature">Alejandra Flores, Listo</p>
+    </div>
+     <div class="container">
+      <div class="cta">
+        <h3>¿Lista para un día más tranquilo?</h3>
+        <p>Guarda tareas, notas y recordatorios en un solo espacio limpio.</p>
+        <a class="btn-light" href="https://apps.apple.com/us/app/listo-today/id6756390475" target="_blank" rel="noopener noreferrer">Obtén Listo para iOS</a>
+        <small>Descarga gratuita. Requiere iOS 17.0 o posterior.</small>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <img src="listo.svg" alt="Listo" class="pill-logo">
         </div>
-    </footer>
+        <div>
+          <h4>Producto</h4>
+          <a href="#features">Características</a>
+          <a href="#features">Descargar</a>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <a href="privacidad.html">Privacidad</a>
+          <a href="mailto:hola@listo.today">Contacto</a>
+        </div>
+        <div>
+          <h4>Social</h4>
+          <a href="https://instagram.com/listo.today" target="_blank" rel="noopener noreferrer"><img src="ig.svg" height="16"> @listo.today</a>
+          <a href="https://x.com/listo.today" target="_blank" rel="noopener noreferrer"><img src="x.svg" height="16"> @listo.today</a>
+          <a href="redesign.html" class="footer-lang">EN 🇺🇸</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2025 Listo. Todos los derechos reservados.</span>
+        <span>Hecho en México por <a href="https://aflores.mx/" target="_blank" rel="noopener noreferrer">aflores.mx</a></span>
+      </div>
+    </div>
+  </footer>
 
-    <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script>
+    if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      gsap.registerPlugin(ScrollTrigger);
+
+      gsap.from(".pill-nav", { y: -10, opacity: 0, duration: 0.6, ease: "power2.out" });
+      gsap.from(".hero h1", { y: 16, opacity: 0, duration: 0.7, delay: 0.1, ease: "power2.out" });
+      gsap.from(".hero p", { y: 12, opacity: 0, duration: 0.6, delay: 0.2, ease: "power2.out" });
+      gsap.from(".hero-actions", { y: 10, opacity: 0, duration: 0.6, delay: 0.3, ease: "power2.out" });
+      gsap.from(".hero-device", { y: 18, opacity: 0, duration: 0.8, delay: 0.35, ease: "power2.out" });
+
+      gsap.from(".feature-card", {
+        scrollTrigger: { trigger: ".feature-grid", start: "top 80%" },
+        y: 24,
+        opacity: 0,
+        duration: 0.7,
+        ease: "power3.out",
+        stagger: 0.1
+      });
+
+      gsap.from(".section h2", {
+        scrollTrigger: { trigger: ".section", start: "top 85%" },
+        y: 20,
+        opacity: 0,
+        duration: 0.6,
+        ease: "power3.out"
+      });
+
+      gsap.from(".story h2, .story p, .story .signature", {
+        scrollTrigger: { trigger: ".story", start: "top 80%" },
+        y: 22,
+        opacity: 0,
+        duration: 0.7,
+        ease: "power3.out",
+        stagger: 0.1
+      });
+
+      gsap.from(".cta", {
+        scrollTrigger: { trigger: ".cta", start: "top 85%" },
+        y: 24,
+        opacity: 0,
+        duration: 0.7,
+        ease: "power3.out"
+      });
+
+      gsap.from(".footer-grid, .footer-bottom", {
+        scrollTrigger: { trigger: ".footer", start: "top 90%" },
+        y: 20,
+        opacity: 0,
+        duration: 0.6,
+        ease: "power3.out",
+        stagger: 0.1
+      });
+
+      gsap.matchMedia().add("(min-width: 901px)", () => {
+        gsap.to(".pill-nav", {
+          width: 700,
+          scrollTrigger: {
+            trigger: "body",
+            start: "top top",
+            end: "+=240",
+            scrub: true
+          }
+        });
+      });
+    }
+  </script>
 </body>
 </html>
