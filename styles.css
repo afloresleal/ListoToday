@@ -354,7 +354,7 @@ box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24p
 .cta small {
   display: block;
   color: rgba(255, 255, 255, 0.7);
-  margin-top: 10px;
+  margin-top: 20px;
   font-size: 0.75rem;
 }
 
@@ -527,12 +527,12 @@ box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24p
   }
 
   .hero h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin: 24px auto 12px;
   }
 
   .hero p {
-    font-size: 0.98rem;
+    font-size: 0.65rem;
     margin: 0 auto 18px;
   }
 
@@ -552,7 +552,8 @@ box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24p
   }
 
   .section h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    line-height: normal;
   }
 
   .feature-card {
@@ -564,7 +565,8 @@ box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24p
   }
 
   .story h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    line-height: normal;
   }
 
   .cta {
@@ -573,7 +575,11 @@ box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24p
   }
 
   .cta h3 {
-    font-size: 2rem;
+    font-size: 1.5rem;
+  }
+
+  .cta p{
+      line-height: normal;
   }
 
   .footer-grid {
