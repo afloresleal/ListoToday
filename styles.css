@@ -527,12 +527,12 @@ box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24p
   }
 
   .hero h1 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     margin: 24px auto 12px;
   }
 
   .hero p {
-    font-size: 0.65rem;
+    font-size: 0.75rem;
     margin: 0 auto 18px;
   }
 
@@ -552,7 +552,7 @@ box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24p
   }
 
   .section h2 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     line-height: normal;
   }
 
@@ -560,12 +560,16 @@ box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24p
     padding: 18px;
   }
 
+  .feature-card p{
+    font-size: .95rem;
+  }
+
   .feature-card h3 {
     font-size: 1.2rem;
   }
 
   .story h2 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     line-height: normal;
   }
 
