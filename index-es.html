@@ -45,51 +45,111 @@
         <a class="btn-light" href="https://apps.apple.com/us/app/listo-today/id6756390475" target="_blank" rel="noopener noreferrer">Obtén Listo para iPhone y Mac</a>
         <a class="btn-outline" href="#features">Ver cómo funciona</a>
       </div>
-      <img src="listo_home.png" alt="Captura de Listo" class="hero-device">
     </div>
   </section>
 
   <section class="section" id="features">
     <div class="container">
       <h2>Todo lo que tu día necesita, en un solo lugar.</h2>
-      <div class="feature-grid">
-        <div class="feature-card">
-          <h3>Bandeja Inteligente</h3>
-          <p>Abre Listo y sabe qué importa hoy.</p>
-        </div>
-        <div class="feature-card">
-          <h3>Tareas Recurrentes</h3>
-          <p>Mantén las rutinas en piloto automático para no tener que recordarlas.</p>
-        </div>
-        <div class="feature-card">
-          <h3>Etiquetas Personalizadas</h3>
-          <p>Agrupa trabajo y vida a tu manera para ver el contexto correcto rápido.</p>
-        </div>
-        <div class="feature-card">
-          <h3>Proyectos Flexibles</h3>
-          <p>Mantén metas grandes juntas sin atarte.</p>
-        </div>
-        <div class="feature-card">
-          <h3>Archiva Todo</h3>
-          <p>Aclara tu vista cuando algo termina sin perderlo.</p>
-        </div>
-        <div class="feature-card">
-          <h3>Modo Claro y Oscuro</h3>
-          <p>Cuidada para tus ojos de día y de noche.</p>
-        </div>
-        <div class="feature-card">
-          <h3>Widget en Pantalla de Inicio</h3>
-          <p>Mira tu día de un vistazo sin abrir la app.</p>
-        </div>
-        <div class="feature-card">
-          <h3>Sincronización con iCloud</h3>
-          <p>Tus tareas y notas siempre al día en iPhone y Mac.</p>
-        </div>
-        <div class="feature-card">
-          <h3>Barra de Menú en Mac</h3>
-          <p>Captura y revisa tu día desde la barra de menú de macOS.</p>
+      <div class="platform-tabs">
+        <div class="tablist" role="tablist" aria-label="Plataforma">
+          <button class="tab" role="tab" id="tab-iphone" aria-controls="panel-iphone" aria-selected="true" data-tab="iphone">iPhone</button>
+          <button class="tab" role="tab" id="tab-mac" aria-controls="panel-mac" aria-selected="false" data-tab="mac" tabindex="-1">Mac</button>
         </div>
       </div>
+        <div class="tab-panel" id="panel-iphone" role="tabpanel" aria-labelledby="tab-iphone">
+          <p class="tab-lead">Captura sobre la marcha y mira tu día de un vistazo.</p>
+          <figure class="iphone-preview">
+            <img src="listo_home.png" alt="Pantalla de Inicio de Listo en iPhone." width="1536" height="3129" loading="lazy">
+            <figcaption>Tu día, de un vistazo.</figcaption>
+          </figure>
+          <div class="feature-grid">
+            <div class="feature-card">
+              <h3>Bandeja inteligente</h3>
+              <p>Abre Listo y sabe qué importa hoy.</p>
+            </div>
+            <div class="feature-card">
+              <h3>Tareas recurrentes</h3>
+              <p>Mantén las rutinas en piloto automático para no tener que recordarlas.</p>
+            </div>
+            <div class="feature-card">
+              <h3>Etiquetas personalizadas</h3>
+              <p>Agrupa trabajo y vida a tu manera para ver el contexto correcto rápido.</p>
+            </div>
+            <div class="feature-card">
+              <h3>Proyectos flexibles</h3>
+              <p>Mantén metas grandes juntas sin atarte.</p>
+            </div>
+            <div class="feature-card">
+              <h3>Archiva todo</h3>
+              <p>Aclara tu vista cuando algo termina sin perderlo.</p>
+            </div>
+            <div class="feature-card">
+              <h3>Modo claro y oscuro</h3>
+              <p>Cuidada para tus ojos de día y de noche.</p>
+            </div>
+            <div class="feature-card">
+              <h3>Widget en pantalla de inicio</h3>
+              <p>Mira tu día de un vistazo sin abrir la app.</p>
+            </div>
+            <div class="feature-card">
+              <h3>Sincronización con iCloud</h3>
+              <p>Tus tareas y notas siempre al día en iPhone y Mac.</p>
+            </div>
+            <div class="feature-card">
+              <h3>Automatiza con enlaces</h3>
+              <p>Crea tareas y notas desde otras apps y Atajos con enlaces listo://.</p>
+            </div>
+          </div>
+        </div>
+        <div class="tab-panel" id="panel-mac" role="tabpanel" aria-labelledby="tab-mac">
+          <p class="tab-lead">El mismo Listo tranquilo, en tu barra de menú.</p>
+          <figure class="mac-preview">
+            <picture>
+              <source media="(max-width: 600px)" srcset="listo_mac_home.png" width="1360" height="1726">
+              <img src="listo_mac_desktop.png" alt="El panel de Inicio de Listo abierto desde la barra de menú en una MacBook." width="6000" height="4000" loading="lazy">
+            </picture>
+            <figcaption>Tu día, a un clic.</figcaption>
+          </figure>
+          <div class="feature-grid">
+            <div class="feature-card">
+              <h3>A un clic de distancia</h3>
+              <p>Vive en la barra de menú sin ícono en el Dock, así nunca estorba.</p>
+            </div>
+            <div class="feature-card">
+              <h3>Despréndelo</h3>
+              <p>Arrastra el panel desde la barra superior para convertirlo en una ventana que puedes redimensionar, y vuelve a anclarlo cuando quieras.</p>
+            </div>
+            <div class="feature-card">
+              <h3>Agregar rápido</h3>
+              <p>Haz clic derecho en el ícono de la barra de menú para agregar una tarea, nota o proyecto al instante.</p>
+            </div>
+            <div class="feature-card">
+              <h3>Se abre al iniciar sesión</h3>
+              <p>Ten Listo listo en cuanto enciendas tu Mac.</p>
+            </div>
+            <div class="feature-card">
+              <h3>Sincronización con iCloud</h3>
+              <p>Tus tareas y notas siempre al día en iPhone y Mac.</p>
+            </div>
+            <div class="feature-card">
+              <h3>Bandeja inteligente</h3>
+              <p>Abre Listo y sabe qué importa hoy.</p>
+            </div>
+            <div class="feature-card">
+              <h3>Tareas recurrentes</h3>
+              <p>Mantén las rutinas en piloto automático para no tener que recordarlas.</p>
+            </div>
+            <div class="feature-card">
+              <h3>Etiquetas personalizadas</h3>
+              <p>Agrupa trabajo y vida a tu manera para ver el contexto correcto rápido.</p>
+            </div>
+            <div class="feature-card">
+              <h3>Proyectos flexibles</h3>
+              <p>Mantén metas grandes juntas sin atarte.</p>
+            </div>
+          </div>
+        </div>
     </div>
   </section>
 
@@ -146,6 +206,40 @@
     </div>
   </footer>
 
+  <script>
+    (function () {
+      var tabs = Array.prototype.slice.call(document.querySelectorAll('.tab'));
+      if (!tabs.length) return;
+      document.documentElement.classList.add('js');
+      function select(name, focus) {
+        tabs.forEach(function (t) {
+          var on = t.getAttribute('data-tab') === name;
+          t.setAttribute('aria-selected', on ? 'true' : 'false');
+          t.tabIndex = on ? 0 : -1;
+          var panel = document.getElementById(t.getAttribute('aria-controls'));
+          if (panel) panel.hidden = !on;
+          if (on && focus) t.focus();
+        });
+        if (window.ScrollTrigger) ScrollTrigger.refresh();
+      }
+      tabs.forEach(function (t, i) {
+        t.addEventListener('click', function () { select(t.getAttribute('data-tab')); });
+        t.addEventListener('keydown', function (e) {
+          var n = e.key === 'ArrowRight' ? i + 1 : e.key === 'ArrowLeft' ? i - 1 : null;
+          if (n === null) return;
+          e.preventDefault();
+          select(tabs[(n + tabs.length) % tabs.length].getAttribute('data-tab'), true);
+        });
+      });
+      document.querySelectorAll('a[data-tab]').forEach(function (a) {
+        a.addEventListener('click', function () { select(a.getAttribute('data-tab')); });
+      });
+      select(location.hash === '#mac' ? 'mac' : 'iphone');
+      window.addEventListener('hashchange', function () {
+        if (location.hash === '#mac') select('mac');
+      });
+    })();
+  </script>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
   <script>
@@ -156,10 +250,9 @@
       gsap.from(".hero h1", { y: 16, opacity: 0, duration: 0.7, delay: 0.1, ease: "power2.out" });
       gsap.from(".hero p", { y: 12, opacity: 0, duration: 0.6, delay: 0.2, ease: "power2.out" });
       gsap.from(".hero-actions", { y: 10, opacity: 0, duration: 0.6, delay: 0.3, ease: "power2.out" });
-      gsap.from(".hero-device", { y: 18, opacity: 0, duration: 0.8, delay: 0.35, ease: "power2.out" });
 
       gsap.from(".feature-card", {
-        scrollTrigger: { trigger: ".feature-grid", start: "top 80%" },
+        scrollTrigger: { trigger: ".platform-tabs", start: "top 85%" },
         y: 24,
         opacity: 0,
         duration: 0.7,
