@@ -255,18 +255,9 @@ box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24p
   line-height: 1;
 }
 
-.hero-device {
-  width: 280px;
-  height: auto;
-  margin: 48px auto -100px;
-  display: block;
-  border-radius: 36px;
-  animation: floaty 6s ease-in-out infinite;
-}
-
 /* Features section */
 .section {
-  padding: 340px 0 72px;
+  padding: 64px 0 72px;
   background: var(--cream);
 }
 
@@ -298,6 +289,92 @@ box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24p
 .feature-card p {
   color: var(--muted);
   font-size: 0.85rem;
+}
+
+/* Platform tabs */
+.platform-tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tablist {
+  display: inline-flex;
+  gap: 4px;
+  padding: 4px;
+  background: var(--white);
+  border: 1px solid var(--card-border);
+  border-radius: 999px;
+}
+
+.tab {
+  border: none;
+  background: transparent;
+  color: var(--blue);
+  font: inherit;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 10px 26px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.tab[aria-selected="true"] {
+  background: var(--blue);
+  color: var(--white);
+}
+
+.tab:focus-visible {
+  outline: 2px solid var(--blue);
+  outline-offset: 2px;
+}
+
+.tab-lead {
+  color: var(--muted);
+  text-align: center;
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+}
+
+.js .tab-panel[hidden] {
+  display: none;
+}
+
+.mac-preview {
+  max-width: 980px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+.mac-preview picture {
+  display: block;
+  overflow: hidden;
+}
+
+.mac-preview img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: -3% 0 -4%;
+}
+
+.iphone-preview figcaption,
+.mac-preview figcaption {
+  margin-top: 16px;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+@media (max-width: 600px) {
+  .mac-preview {
+    max-width: 360px;
+    margin-bottom: 28px;
+  }
+
+  .mac-preview img {
+    margin: 0;
+  }
 }
 
 /* Story */
@@ -483,7 +560,7 @@ box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24p
   }
 
   .section {
-    padding: 260px 0 56px;
+    padding: 56px 0;
   }
 }
 
@@ -516,10 +593,6 @@ box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24p
     max-height: none;
   }
 
-  .hero-device {
-    width: 220px;
-    margin-bottom: -280px;
-  }
 
   .pill-btn {
     padding: 8px 14px;
@@ -548,7 +621,7 @@ box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24p
   }
 
   .section {
-    padding: 280px 0 48px;
+    padding: 48px 0;
   }
 
   .section h2 {
@@ -634,18 +707,25 @@ box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24p
   }
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .hero-device {
-    animation: none;
-  }
+
+.iphone-preview {
+  text-align: center;
+  margin: 0 auto 40px;
 }
 
-@keyframes floaty {
-  0%,
-  100% {
-    transform: translateY(0);
+.iphone-preview img {
+  display: block;
+  width: min(280px, 100%);
+  height: auto;
+  margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+  .iphone-preview {
+    margin-bottom: 28px;
   }
-  50% {
-    transform: translateY(-8px);
+
+  .iphone-preview img {
+    width: min(240px, 100%);
   }
 }
